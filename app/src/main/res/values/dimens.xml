@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_padding">16dp</dimen>
+    <dimen name="padding_between_elements">8dp</dimen>
+    <dimen name="padding_between_buttons">4dp</dimen>
+    <dimen name="image_view_size">24dp</dimen>
+    <dimen name="vertical_menu_padding">20dp</dimen>
+    <dimen name="text_size">22sp</dimen>
+</resources>

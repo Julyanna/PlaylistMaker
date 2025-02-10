@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+
+    <Toolbar
+        android:id="@+id/settingsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:contentInsetRight="0dp"
+        android:navigationIcon="@drawable/ic_arrow_back"
+        android:onClick="onClick"
+        android:textSize="@dimen/text_size"
+        android:title="@string/settings"
+        android:titleMarginStart="0dp"
+        android:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+        android:titleTextColor="@color/black"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/darkThemeSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="24dp"
+        android:paddingHorizontal="@dimen/common_padding"
+        android:paddingVertical="@dimen/vertical_menu_padding"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:text="@string/dark_theme"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:switchMinWidth="35dp"
+        app:thumbTint="@color/switch_thumb_selector"
+        app:trackTint="@color/switch_track_selector" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/shareView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_share"
+        android:paddingStart="@dimen/common_padding"
+        android:paddingEnd="@dimen/vertical_menu_padding"
+        android:paddingVertical="@dimen/vertical_menu_padding"
+        android:text="@string/share"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/supportView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_support"
+        android:paddingHorizontal="@dimen/common_padding"
+        android:paddingVertical="@dimen/vertical_menu_padding"
+        android:text="@string/support"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/userAgreementView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_user_agreement"
+        android:paddingStart="@dimen/common_padding"
+        android:paddingEnd="@dimen/vertical_menu_padding"
+        android:paddingVertical="@dimen/vertical_menu_padding"
+        android:text="@string/user_agreement"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+</LinearLayout>
